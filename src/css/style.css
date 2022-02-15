@@ -3,6 +3,21 @@
     padding: 0%;
 }
 
+body{
+    background: url(/src/images/BG.png) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    align-items: center;
+    display: grid;
+    justify-items: center;
+
+}
+
+button{
+    cursor: pointer;
+}
+
 ul{
     list-style: none;
     text-align: left;
@@ -23,16 +38,8 @@ li button{
     border: none;
     border-radius: 5px ;
 
+}
 
-}
-body{
-    background-color: black;
-    height: 100vh;
-    align-items: center;
-    display: grid;
-    justify-items: center;
-    
-}
 
 .timer{
     position: relative;
@@ -42,29 +49,38 @@ body{
     border-radius: 15px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.568);
-    
+
 }
 
 .timer #tempo{
     background-color: rgba(0, 0, 0, 0.699);
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid cyan;
+    border-radius: 50%;
     color: cyan;
-    padding: 10px;
+    margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    box-sizing: border-box;
+    padding: 20px; 
 }
 .botoes{
     width: 500px;
     text-align: center;
-}
 
+}
 .botoes button{
     margin: 10px 15px 10px 0 ;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    
+    width: 80px;
+
 }
+
 
 #seustempos{
     display: none;
@@ -77,9 +93,9 @@ body{
         margin: 20px auto;
         /* margin-top: 20px; */
         width: 100%;
-        
-       
-        
+
+
+
     }
     .botoes{
         width: 100%;
@@ -98,20 +114,54 @@ body{
         display: block;
         height: auto;
         width: 100%;
-       
+
     }
     .timer{
         margin: 20px auto;
         width: 450px;
-           
+
     }
+    .timer #tempo{
+        width: 300px;
+        height: 300px;
+        padding: 50px;
+    }
+    
+    
     .botoes{
-        
-        margin: 10px 0 ;
+        width: 450px;
+        text-align: center;
+        margin: 10px 0;
+    }
+   
+    .botoes{
+        width: 450px;
+        text-align: center;
+        margin: 10px 0;
     }
     .botoes button{
-        width: 100%;
-        margin-top: 0px;
+        margin: 5px auto ;
+        
+    }
+    #playbutton{
+        display: block;
+        width: 80%;
+    }
+    #pausebutton{
+        display: inline;
+        width: 40%;
+    }
+    #resetbutton{
+        display: inline;
+        width: 40%;
+    }
+    #savebutton{
+        display: inline;
+        width: 40%;
+    }
+    #deleteAll{
+        display: inline;
+        width: 40%;
     }
 }
 
@@ -124,16 +174,49 @@ body{
     .timer{
         margin: 20px auto;
         width: 350px;
-           
+
+    }
+    .timer #tempo{
+        font-size: 30px;
+        padding: 50px;
+        width: 250px;
+        height: 250px;
+        
     }
     .botoes{
         width: 350px;
         text-align: center;
         margin: 10px 0;
     }
+   
+    .botoes{
+        width: 350px;
+        text-align: center;
+        margin: 10px 0;
+    }
     .botoes button{
-        width: 100%;
-        margin-top: 0px;
+        margin: 5px auto ;
+        
+    }
+    #playbutton{
+        display: block;
+        width: 80%;
+    }
+    #pausebutton{
+        display: inline;
+        width: 40%;
+    }
+    #resetbutton{
+        display: inline;
+        width: 40%;
+    }
+    #savebutton{
+        display: inline;
+        width: 40%;
+    }
+    #deleteAll{
+        display: inline;
+        width: 40%;
     }
 }
 @media (max-width: 400px){
@@ -143,7 +226,12 @@ body{
         /* margin-top: 20px; */
         width: 300px;
         
-       
+    }
+    .timer #tempo{
+        width: 200px;
+        height: 200px;
+        font-size: 30px;
+        padding: 25px;
         
     }
     .botoes{
@@ -152,7 +240,27 @@ body{
         margin: 10px 0;
     }
     .botoes button{
-        width: 100%;
-        margin-top: 0px;
+        margin: 5px auto ;
+        
+    }
+    #playbutton{
+        display: block;
+        width: 80%;
+    }
+    #pausebutton{
+        display: inline;
+        width: 40%;
+    }
+    #resetbutton{
+        display: inline;
+        width: 40%;
+    }
+    #savebutton{
+        display: inline;
+        width: 40%;
+    }
+    #deleteAll{
+        display: inline;
+        width: 40%;
     }
 }

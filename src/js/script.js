@@ -67,8 +67,8 @@ function zerar() {
     play2 = false
     play1 = false
 
-    hiddedisplay()
-    deletelistaTempos()
+    //hiddedisplay()
+    //deletelistaTempos()
 
 }
 
@@ -132,19 +132,17 @@ function deleteItem(element) {
     listaTempos = listaTempos.filter(list => list.id != element.getAttribute("id-data"))
 
     updateScreen()
-    oioi()
+    hidedisplay2()
 
 
 }
-
-
-
 
 
 function deletelistaTempos() {
 
     listaTempos = []
     updateScreen()
+    hidedisplay()
 
 }
 
@@ -153,18 +151,14 @@ function showdisplay() {
     display.style.display = "inline-block"
 }
 
-function hiddedisplay() {
+function hidedisplay() {
     let display = document.getElementById("seustempos")
     display.style.display = "none"
 
 }
 
-function oi() {
-    var ul = document.getElementsByTagName("ul")
-    // if(ul.children = ""){
-    //     console.log("oi")
-
-    // }
+function hidde() {
+       
     if (document.getElementsByTagName("li").length == 0) {
 
         let display = document.getElementById("seustempos")
@@ -172,20 +166,16 @@ function oi() {
         
         clearInterval(atualizacao)
         play3 = false
-        console.log ("oi")
+        
         
     }
     
-    
-
-
-    // console.log(document.getElementsByTagName("li"))
 
 }
 
-function oioi() {
+function hidedisplay2() {
     if (!play3) {
-        atualizacao = setInterval(oi, 1)
+        atualizacao = setInterval(hidde, 1)
         play3 = true
         
     }

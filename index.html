@@ -19,14 +19,16 @@
             00 : 00 : 00
         </h1>
         <div class="botoes">
-            <button onclick="iniciar()">Iniciar</button>
-            <button onclick="pause()">Parar</button>
-            <button onclick="zerar()">Zerar</button>
-            <button onclick="salvar()">Salvar</button>
+            <button id ="playbutton" onclick="iniciar()"><img src="./src/images/play.png" alt="play" ></button>
+            <button id="pausebutton" onclick="pause()"><img src="./src/images/pause.png" alt="pause"></button>
+            <button id="resetbutton" onclick="zerar()"><img src="./src/images/circular-arrow.png" alt="reset"></button>
+            <button id="savebutton" onclick="salvar()"><img src="./src/images/archive.png" alt="save"></button>
+            <button id="deleteAll" onclick="deletelistaTempos()"><img src="./src/images/multiplication-sign.png" alt=""></button>
         </div>
         
         <div id="seustempos">
             <h2>Seus Tempos:</h2>
+            
         </div>
 
         <div id="tempos">
@@ -37,6 +39,7 @@
         
 
     </div>
+    
 
 
 </body>
