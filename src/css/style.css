@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url(../images/BG.png) no-repeat top center;
+    background: url(./SRC/images/BG.png) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
