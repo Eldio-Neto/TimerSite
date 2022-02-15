@@ -67,8 +67,7 @@ function zerar() {
     play2 = false
     play1 = false
 
-    //hiddedisplay()
-    //deletelistaTempos()
+    
 
 }
 
@@ -83,7 +82,6 @@ function idGenerator() {
 
     return id
 }
-
 
 function salvar() {
 
@@ -136,7 +134,6 @@ function deleteItem(element) {
 
 
 }
-
 
 function deletelistaTempos() {
 
