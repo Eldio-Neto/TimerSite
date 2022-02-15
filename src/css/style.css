@@ -110,12 +110,7 @@ li button{
     #tempo{
         font-size: 40px;
     }
-    body{
-        display: block;
-        height: auto;
-        width: 100%;
-
-    }
+    
     .timer{
         margin: 20px auto;
         width: 450px;
